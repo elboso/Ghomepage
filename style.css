@@ -1,5 +1,80 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-rows:  50px auto 40px 40px;
+  height: 100vh;
+
+  grid-template-columns:
+  [first] 100px
+  [second] auto
+  [third] 100px [endcol];
+
+  grid-template-rows:
+  [row1-start] 60px
+  [row1-end row2-start] auto
+  [row2-end row3-start] auto
+  [row3-end row4-start] auto
+  [row4-end row5-start] auto
+  [row5-end row6-start] 30px
+  [row6-end row7-start] 30px [row7-end];
+}
+
+.banniere-haut {
+  background-color: steelblue;
+  grid-column-start: first;
+  grid-column-end: endcol;
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+}
+
+.logo {
+  background-color: plum;
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: row2-start;
+  grid-row-end: row2-end;
+}
+
+.searchbar {
+  background-color: khaki;
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: ;
+  grid-row-end: ;
+}
+
+.boutons {
+  background-color: deeppink;
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: ;
+  grid-row-end: ;
+}
+
+.langues {
+  background-color: royalblue;
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: ;
+  grid-row-end: ;
+}
+
+.localisation {
+  background-color: orangered;
+  grid-column-start: first;
+  grid-column-end: endcol;
+  grid-row-start: ;
+  grid-row-end: ;
+}
+
+.banniere-bas {
+  background-color: silver;
+  grid-column-start: first;
+  grid-column-end: endcol;
+  grid-row-start: ;
+  grid-row-end: ;
 }
