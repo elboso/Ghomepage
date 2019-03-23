@@ -1,4 +1,6 @@
-
+/**
+Manage the grid display
+*/
 .container {
   display: grid;
   height: 100vh;
