@@ -6,13 +6,13 @@ Manage the grid display
   height: 100vh;
 
   grid-template-columns:
-  [first] 100px
+  [first] 400px
   [second] auto
-  [third] 100px [endcol];
+  [third] 400px [endcol];
 
   grid-template-rows:
   [row1-start] 60px
-  [row1-end row2-start] auto
+  [row1-end row2-start] 160px
   [row2-end row3-start] auto
   [row3-end row4-start] auto
   [row4-end row5-start] auto
@@ -34,6 +34,11 @@ Manage the grid display
   grid-column-end: third;
   grid-row-start: row2-start;
   grid-row-end: row2-end;
+
+  justify-self: center;
+  align-self: end;
+
+  height: 92px;
 }
 
 .searchbar {
@@ -68,9 +73,17 @@ Manage the grid display
   grid-row-end: ;
 }
 
-.footer {
-  background-color: silver;
+.footer-left {
+  background-color: green;
   grid-column-start: first;
+  grid-column-end: second;
+  grid-row-start: ;
+  grid-row-end: ;
+}
+
+.footer-right {
+  background-color: royalblue;
+  grid-column-start: third;
   grid-column-end: endcol;
   grid-row-start: ;
   grid-row-end: ;
