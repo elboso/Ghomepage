@@ -12,10 +12,10 @@ Manage the grid display
 
   grid-template-rows:
   [row1-start] 60px
-  [row1-end row2-start] 160px
+  [row1-end row2-start] minmax(120px, 240px)
   [row2-end row3-start] auto
   [row3-end row4-start] auto
-  [row4-end row5-start] auto
+  [row4-end row5-start] minmax(20px, 240px)
   [row5-end row6-start] 30px
   [row6-end row7-start] 30px [row7-end];
 }
@@ -28,6 +28,10 @@ Manage the grid display
   grid-row-end: row1-end;
 
   text-align: right;
+}
+
+.header li {
+  margin: 10px 5px;
 }
 
 li {
@@ -43,8 +47,6 @@ li {
 
   justify-self: center;
   align-self: end;
-
-  height: 92px;
 }
 
 .searchbar {
