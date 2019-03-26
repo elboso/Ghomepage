@@ -30,6 +30,10 @@ Manage the grid display
   text-align: right;
 }
 
+li {
+  display: inline-block;
+}
+
 .logo {
   background-color: plum;
   grid-column-start: second;
@@ -84,7 +88,7 @@ Manage the grid display
   align-self: center;
 }
 
-.footer p {
+.footer ul {
   display: inline-block;
   vertical-align: middle;
 }
