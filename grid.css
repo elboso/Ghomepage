@@ -26,6 +26,8 @@ Manage the grid display
   grid-column-end: endcol;
   grid-row-start: row1-start;
   grid-row-end: row1-end;
+
+  text-align: right;
 }
 
 .logo {
@@ -45,38 +47,48 @@ Manage the grid display
   background-color: khaki;
   grid-column-start: second;
   grid-column-end: third;
-  grid-row-start: ;
-  grid-row-end: ;
 }
 
 .boutons {
   background-color: deeppink;
   grid-column-start: second;
   grid-column-end: third;
-  grid-row-start: ;
-  grid-row-end: ;
 }
 
 .langues {
   background-color: royalblue;
   grid-column-start: second;
   grid-column-end: third;
-  grid-row-start: ;
-  grid-row-end: ;
 }
 
 .localisation {
   background-color: orangered;
   grid-column-start: first;
   grid-column-end: endcol;
-  grid-row-start: ;
-  grid-row-end: ;
 }
 
+/** FOOTER */
 .footer {
-  background-color: silver;
   grid-column-start: first;
   grid-column-end: endcol;
-  grid-row-start: ;
-  grid-row-end: ;
+  grid-row-start: row7-start;
+  grid-row-end: row7-end;
+
+}
+
+.background {
+  background-color: silver;
+}
+.content {
+  z-index: 2;
+  align-self: center;
+}
+
+.footer p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#right-footer {
+  float: right;
 }
