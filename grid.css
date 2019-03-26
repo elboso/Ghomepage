@@ -73,17 +73,9 @@ Manage the grid display
   grid-row-end: ;
 }
 
-.footer-left {
-  background-color: green;
+.footer {
+  background-color: silver;
   grid-column-start: first;
-  grid-column-end: second;
-  grid-row-start: ;
-  grid-row-end: ;
-}
-
-.footer-right {
-  background-color: royalblue;
-  grid-column-start: third;
   grid-column-end: endcol;
   grid-row-start: ;
   grid-row-end: ;
