@@ -13,7 +13,7 @@ Manage the grid display
   grid-template-rows:
   [row1-start] 60px
   [row1-end row2-start] minmax(120px, 240px)
-  [row2-end row3-start] auto
+  [row2-end row3-start] 44px
   [row3-end row4-start] auto
   [row4-end row5-start] minmax(20px, 240px)
   [row5-end row6-start] 30px
@@ -29,20 +29,40 @@ Manage the grid display
   text-align: right;
 }
 
+.main {
+  justify-self: center;
+}
+
 .logo {
   grid-column-start: second;
   grid-column-end: third;
   grid-row-start: row2-start;
   grid-row-end: row2-end;
 
-  justify-self: center;
   align-self: end;
+  margin-bottom: 30px;
 }
 
+/* SEARCHBAR */
 .searchbar {
-  background-color: khaki;
   grid-column-start: second;
   grid-column-end: third;
+  grid-row-start: row3-start;
+  grid-row-end: row3-end;
+
+
+  z-index: 2;
+  /* align-self: center; */
+  width: 580px;
+}
+
+#searchborder {
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: row3-start;
+  grid-row-end: row3-end;
+  width: 580px;
+  height: 44px;
 }
 
 .boutons {
@@ -63,7 +83,7 @@ Manage the grid display
   grid-column-end: endcol;
 }
 
-/** FOOTER */
+/* FOOTER */
 .footer {
   grid-column-start: first;
   grid-column-end: endcol;
