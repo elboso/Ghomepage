@@ -21,7 +21,6 @@ Manage the grid display
 }
 
 .header {
-  background-color: steelblue;
   grid-column-start: first;
   grid-column-end: endcol;
   grid-row-start: row1-start;
@@ -31,7 +30,6 @@ Manage the grid display
 }
 
 .logo {
-  background-color: plum;
   grid-column-start: second;
   grid-column-end: third;
   grid-row-start: row2-start;
