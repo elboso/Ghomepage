@@ -14,8 +14,8 @@ Manage the grid display
   [row1-start] 60px
   [row1-end row2-start] minmax(120px, 240px)
   [row2-end row3-start] 44px
-  [row3-end row4-start] auto
-  [row4-end row5-start] minmax(20px, 240px)
+  [row3-end row4-start] 80px
+  [row4-end row5-start] auto
   [row5-end row6-start] 30px
   [row6-end row7-start] 30px [row7-end];
 }
@@ -69,15 +69,16 @@ Manage the grid display
   /* background-color: deeppink; */
   grid-column-start: second;
   grid-column-end: third;
+  align-self: center;
 
 }
 
 .boutons button {
-  margin: 20px 4px;
+  margin: 11px 4px;
 }
 
 .langues {
-  background-color: royalblue;
+  /* background-color: royalblue; */
   grid-column-start: second;
   grid-column-end: third;
 }

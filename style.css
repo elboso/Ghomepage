@@ -1,7 +1,8 @@
 
 
-body, td, a, p, {
-  ont-family: arial,sans-serif;
+body, td, a, p, button {
+  font-family: arial,sans-serif;
+  font-size: 14px;
 }
 
 ul {
@@ -59,8 +60,6 @@ button {
   padding: 0px 16px;
   border: 1px solid transparent;
   border-radius: 4px;
-  font-family: arial, sans-serif;
-  font-size: 14px;
   height: 36px;
   background-color: rgb(242, 242, 242);
   color: rgb(95, 99, 104);
@@ -72,6 +71,20 @@ button:hover {
 	/* -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1); */
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   border: 1px solid #c6c6c6;
+}
+
+.langues p, a {
+  font-size: small;
+  padding: 0 3px;
+}
+
+.langues a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.langues a:hover {
+  text-decoration: underline;
 }
 
 .background {
