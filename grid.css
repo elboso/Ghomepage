@@ -16,8 +16,8 @@ Manage the grid display
   [row2-end row3-start] 44px
   [row3-end row4-start] 80px
   [row4-end row5-start] auto
-  [row5-end row6-start] 30px
-  [row6-end row7-start] 30px [row7-end];
+  [row5-end row6-start] 40px
+  [row6-end row7-start] 40px [row7-end];
 }
 
 .header {
@@ -83,21 +83,45 @@ Manage the grid display
   grid-column-end: third;
 }
 
+/* FOOTER */
+
 .localisation {
-  background-color: orangered;
   grid-column-start: first;
   grid-column-end: endcol;
+  grid-row-start: row6-start;
+  grid-row-end: row6-end;
+
 }
 
-/* FOOTER */
-.footer {
+.content {
   grid-column-start: first;
   grid-column-end: endcol;
   grid-row-start: row7-start;
+  grid-row-end: row7-end;
+}
+
+.footer {
+  align-self: center;
+  z-index: 2;
+}
+
+.localisation, #left-footer li {
+  padding-left: 27px;
+}
+
+
+.background {
+  grid-column-start: first;
+  grid-column-end: endcol;
+  grid-row-start: row6-start;
   grid-row-end: row7-end;
 
 }
 
 #right-footer {
   float: right;
+}
+
+#right-footer li {
+  padding-right: 27px;
 }

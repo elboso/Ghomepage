@@ -11,18 +11,25 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 li {
   display: inline-block;
   vertical-align: middle;
 }
 
-li a {
-  text-decoration: none;
+.header a {
   color: rgba(0,0,0,0.87);
 }
 
-li a:hover {
-  text-decoration: underline;
+.header a:hover {
   opacity: 0.85;
 }
 
@@ -80,23 +87,32 @@ button:hover {
 
 .langues a {
   color: #1a0dab;
-  text-decoration: none;
 }
 
-.langues a:hover {
-  text-decoration: underline;
+
+.loc {
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.localisation {
+	border-bottom: 1px solid #e4e4e4;
+  height: 40px;
+
+}
+
+.footer {
+  color: rgba(0,0,0,.54);
 }
 
 .background {
-  background-color: silver;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid #e4e4e4;
 }
 
-.content {
-  z-index: 2;
-  align-self: center;
-}
-
-.footer ul {
+.content ul {
   display: inline-block;
   vertical-align: middle;
+  font-size: 13px;
 }
