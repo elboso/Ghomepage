@@ -66,9 +66,14 @@ Manage the grid display
 }
 
 .boutons {
-  background-color: deeppink;
+  /* background-color: deeppink; */
   grid-column-start: second;
   grid-column-end: third;
+
+}
+
+.boutons button {
+  margin: 20px 4px;
 }
 
 .langues {
